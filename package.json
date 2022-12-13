@@ -1,15 +1,29 @@
 {
-  "name": "amanshennacreations2022",
+  "name": "amans henna creations",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.2.3",
+    "emailjs-com": "^3.2.0",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
+    "react-grid-gallery": "^1.0.0",
+    "react-image-lightbox": "^5.1.4",
+    "react-images": "^1.2.0-beta.7",
+    "react-lightbox-component": "^1.2.1",
+    "react-photo-album": "^2.0.0",
+    "react-photo-gallery": "^8.0.0",
+    "react-router": "^6.4.5",
+    "react-router-link": "^2.0.2",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-spring-lightbox": "^1.7.1",
+    "styled-components": "^5.3.6",
+    "web-vitals": "^2.1.4",
+    "yarn": "^1.22.19"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "2.8.1"
   }
 }
