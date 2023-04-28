@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const ServicesContent = styled.div`
+  align-items: center;
   display: flex;
-  justify-content: center;
-  overflow: auto;
+  margin: 40px 0;
   animation: fadeIn ease 3s;
   -webkit-animation: fadeIn ease 3s;
   @keyframes fadeIn {
@@ -24,35 +24,21 @@ export const ServicesContainer = styled.div`
 `;
 
 export const ServiceMainImg = styled.img`
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
 `;
 
 export const ServiceImg = styled.img`
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 `;
 
-export const ServiceDropdown = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 50px;
-  border: solid black;
-  width: 1000px;
+export const ServiceSection = styled.div`
+  width: 100%;
   font-size: 20px;
-  margin-bottom: 10px;
-  &:hover {
-    color: red;
-    cursor: pointer;
-  }
 `;
 
-export const ServiceDropdownContent = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  width: 1000px;
-  font-size: 20px;
+export const ServiceHeading = styled.div`
+  font-size: 25px;
 `;

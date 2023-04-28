@@ -6,147 +6,67 @@ import {
   ServiceImg,
   ServiceDropdown,
   ServiceDropdownContent,
+  ServiceHeader,
+  ServiceSection,
+  ServiceHeading,
 } from "./services.styles";
 import CurlyText from "../../Components/Curly/curly.component";
-import { useState } from "react";
-
-/*
-{showDrop ? (
-            <img
-              src={"caret-up-fill.svg"}
-              width={"30px"}
-              height={"30px"}
-              alt=""
-            />
-          ) : (
-            <img
-              src={"caret-down-fill.svg"}
-              width={"30px"}
-              height={"30px"}
-              alt=""
-            />
-          )}
-*/
 
 const Services = () => {
-  const [selectedIndex, setSelectedIndex] = useState(null);
-
-  const createOnClick = (i) => () => {
-    if (selectedIndex === i) {
-      setSelectedIndex(null);
-    } else {
-      setSelectedIndex(i);
-    }
-  };
-
-  const Caret = ({ num }) => {
-    return (
-      <div>
-        {num ? (
-          <img
-            src={"caret-up-fill.svg"}
-            width={"30px"}
-            height={"30px"}
-            alt=""
-          />
-        ) : (
-          <img
-            src={"caret-down-fill.svg"}
-            width={"30px"}
-            height={"30px"}
-            alt=""
-          />
-        )}
-      </div>
-    );
-  };
-
   return (
     <div id="services">
       <PageHeader text={"Services"} />
       <ServicesContainer>
         <ServicesContent>
+          <ServiceMainImg src="services_main.jpeg" alt={""} />
           <CurlyText
             text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aliquid et, fugit illum ipsam praesentium. Accusantium amet eaque explicabo iusto nulla numquam odio ratione repudiandae, sapiente sit ut, vitae!"
             curly
           />
         </ServicesContent>
-
-        <ServiceDropdown onClick={createOnClick(1)}>
-          Party Henna
-          <Caret num={selectedIndex} />
-        </ServiceDropdown>
-        {selectedIndex === 1 ? <PartyDrop /> : null}
-        <ServiceDropdown onClick={createOnClick(2)}>
-          Bridal Henna
-          <Caret num={selectedIndex} />
-        </ServiceDropdown>
-        {selectedIndex === 2 ? <BridalDrop /> : null}
-        <ServiceDropdown onClick={createOnClick(3)}>
-          Baby Shower Henna
-          <Caret num={selectedIndex} />
-        </ServiceDropdown>
-        {selectedIndex === 3 ? <BabyShowerDrop /> : null}
-        <ServiceDropdown onClick={createOnClick(4)}>
-          Custom Henna
-          <Caret num={selectedIndex} />
-        </ServiceDropdown>
-        {selectedIndex === 4 ? <CustomDrop /> : null}
+        <ServiceSection>
+          <ServiceHeading>Party Henna</ServiceHeading>
+          <ServiceImg src={"party.jpeg"} />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi
+            culpa enim eveniet optio recusandae, similique vero voluptatibus?
+            Aspernatur atque dicta exercitationem itaque perferendis quaerat
+            voluptatibus! Cupiditate odit officia vel.
+          </p>
+        </ServiceSection>
+        <ServiceSection>
+          <ServiceHeading>Bridal Henna</ServiceHeading>
+          <ServiceImg src={"bridal_pic.jpeg"} />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi
+            culpa enim eveniet optio recusandae, similique vero voluptatibus?
+            Aspernatur atque dicta exercitationem itaque perferendis quaerat
+            voluptatibus! Cupiditate odit officia vel.
+          </p>
+        </ServiceSection>
+        <ServiceSection>
+          <ServiceHeading>Baby Shower Henna</ServiceHeading>
+          <ServiceImg src={"baby.jpeg"} />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi
+            culpa enim eveniet optio recusandae, similique vero voluptatibus?
+            Aspernatur atque dicta exercitationem itaque perferendis quaerat
+            voluptatibus! Cupiditate odit officia vel.
+          </p>
+        </ServiceSection>
+        <ServiceSection>
+          <ServiceHeading>Custom Henna</ServiceHeading>
+          <ServiceImg src={"custom.jpeg"} />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi
+            culpa enim eveniet optio recusandae, similique vero voluptatibus?
+            Aspernatur atque dicta exercitationem itaque perferendis quaerat
+            voluptatibus! Cupiditate odit officia vel.
+          </p>
+        </ServiceSection>
       </ServicesContainer>
     </div>
   );
 };
-
-const PartyDrop = () => (
-  <div>
-    <ServiceDropdownContent>
-      <ServiceImg src="partyhenna.png" alt={""} />
-      <CurlyText
-        text={
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aliquid et, fugit illum ipsam praesentium. Accusantium amet eaque explicabo iusto nulla numquam odio ratione repudiandae, sapiente sit ut, vitae!"
-        }
-      />
-    </ServiceDropdownContent>
-  </div>
-);
-
-const BridalDrop = () => (
-  <div>
-    <ServiceDropdownContent>
-      <ServiceImg src="partyhenna.png" alt={""} />
-      <CurlyText
-        text={
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aliquid et, fugit illum ipsam praesentium. Accusantium amet eaque explicabo iusto nulla numquam odio ratione repudiandae, sapiente sit ut, vitae!"
-        }
-      />
-    </ServiceDropdownContent>
-  </div>
-);
-
-const BabyShowerDrop = () => (
-  <div>
-    <ServiceDropdownContent>
-      <ServiceImg src="partyhenna.png" alt={""} />
-      <CurlyText
-        text={
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aliquid et, fugit illum ipsam praesentium. Accusantium amet eaque explicabo iusto nulla numquam odio ratione repudiandae, sapiente sit ut, vitae!"
-        }
-      />
-    </ServiceDropdownContent>
-  </div>
-);
-
-const CustomDrop = () => (
-  <div>
-    <ServiceDropdownContent>
-      <ServiceImg src="partyhenna.png" alt={""} />
-      <CurlyText
-        text={
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aliquid et, fugit illum ipsam praesentium. Accusantium amet eaque explicabo iusto nulla numquam odio ratione repudiandae, sapiente sit ut, vitae!"
-        }
-      />
-    </ServiceDropdownContent>
-  </div>
-);
 
 export default Services;
