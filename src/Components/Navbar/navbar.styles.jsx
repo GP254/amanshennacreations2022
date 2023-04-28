@@ -1,35 +1,44 @@
 import styled from "styled-components";
 
 export const StyledNavbar = styled.div`
-  background-color: #efe7df;
-  display: flex;
-  flex-direction: row;
-  padding: 30px;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  background-image: linear-gradient(rgb(147, 93, 39, 0.5), black);
+  padding: 10px 0;
   overflow: auto;
   position: sticky;
-  top: 0px;
+  top: 0;
   z-index: 1110;
 `;
 
-export const StyledTitle = styled.div`
-  font-size: 30px;
-`;
-
-export const StyledOptions = styled.ul`
+export const StyledItemWrapper = styled.div`
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
+  width: 1000px;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const StyledTitle = styled.div`
+  font-size: 18px;
+`;
+
+export const StyledOptions = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 export const StyledLinks = styled.a`
-  font-size: 20px;
-  padding-left: 80px;
+  font-size: 12px;
+  margin-left: 80px;
   text-decoration: none;
-  color: black;
+  color: #ffffff;
+
   &:hover {
     color: #935d27;
     cursor: pointer;
   }
+`;
+
+export const StyledLogo = styled.img`
+  height: 60px;
 `;

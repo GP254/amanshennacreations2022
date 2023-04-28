@@ -3,29 +3,23 @@ import {
   StyledLinks,
   StyledOptions,
   StyledTitle,
+  StyledItemWrapper,
+  StyledLogo,
 } from "./navbar.styles";
 
 const NavBar = () => {
   return (
     <StyledNavbar>
-      <StyledTitle>AMANS HENNA CREATIONS</StyledTitle>
-      <StyledOptions role="nav">
-        <a href="#home">
-          <StyledLinks>HOME</StyledLinks>
-        </a>
-        <a href="#services">
-          <StyledLinks>SERVICES</StyledLinks>
-        </a>
-        <a href="#about">
-          <StyledLinks>ABOUT</StyledLinks>
-        </a>
-        <a href="#gallery">
-          <StyledLinks>GALLERY</StyledLinks>
-        </a>
-        <a href="#contact">
-          <StyledLinks>CONTACT</StyledLinks>
-        </a>
-      </StyledOptions>
+      <StyledItemWrapper>
+        <StyledLogo src="logo.png" />
+        <StyledOptions role="nav">
+          <StyledLinks href="#home">HOME</StyledLinks>
+          <StyledLinks href="#services">SERVICES</StyledLinks>
+          <StyledLinks href="#about">ABOUT</StyledLinks>
+          <StyledLinks href="#gallery">GALLERY</StyledLinks>
+          <StyledLinks href="#contact">CONTACT</StyledLinks>
+        </StyledOptions>
+      </StyledItemWrapper>
     </StyledNavbar>
   );
 };

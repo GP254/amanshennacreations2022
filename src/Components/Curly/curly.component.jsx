@@ -1,10 +1,10 @@
-import {CurlyTextBox, TopCurl, BottomCurl} from "./curly.styles";
+import { CurlyTextBox, TopCurl, BottomCurl } from "./curly.styles";
 
 const CurlyText = (props) => (
   <CurlyTextBox>
-    <TopCurl src="curlyart1.png" alt={""}/>
+    {props.curly ? <TopCurl src="curlyart1.png" alt={""} /> : null}
     {props.text}
-    <BottomCurl src="curlyart2.png" alt={""}/>
+    {props.curly ? <BottomCurl src="curlyart2.png" alt={""} /> : null}
   </CurlyTextBox>
 );
 

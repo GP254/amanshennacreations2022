@@ -1,4 +1,9 @@
-import { StyledColumn, StyledFooter, StyledHeader } from "./footer.styles";
+import {
+  StyledColumn,
+  StyledFooter,
+  StyledHeader,
+  StyledImg,
+} from "./footer.styles";
 
 const Footer = () => (
   <StyledFooter>
@@ -18,6 +23,37 @@ const Footer = () => (
     </StyledColumn>
     <StyledColumn>
       <StyledHeader>Social Media</StyledHeader>
+      <div>
+        <StyledImg
+          src={"instagram.svg"}
+          width={"25px"}
+          height={"25px"}
+          onClick={() =>
+            window.open(
+              "https://www.instagram.com/amans.henna.creations/?hl=en"
+            )
+          }
+          alt=""
+        />
+        <StyledImg
+          src={"facebook.svg"}
+          width={"25px"}
+          height={"25px"}
+          onClick={() =>
+            window.open("https://www.facebook.com/amanshennacreations/")
+          }
+          alt=""
+        />
+        <StyledImg
+          src={"tiktok.svg"}
+          width={"25px"}
+          height={"25px"}
+          onClick={() =>
+            window.open("https://www.tiktok.com/@amans.henna.creations")
+          }
+          alt=""
+        />
+      </div>
     </StyledColumn>
   </StyledFooter>
 );

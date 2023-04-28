@@ -4,12 +4,6 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import { Route, Router } from "react-router";
-import Home from "./Scenes/Home/home.scene";
-import Services from "./Scenes/Services/services.scene";
-import About from "./Scenes/About/about.scene";
-import PhotoGallery from "./Scenes/Gallery/gallery.scene";
-import Contact from "./Scenes/Contact/contact.scene";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
