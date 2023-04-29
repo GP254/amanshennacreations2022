@@ -5,9 +5,6 @@ import {
   ServicesContent,
   ServiceMainImg,
   ServiceImg,
-  ServiceDropdown,
-  ServiceDropdownContent,
-  ServiceHeader,
   ServiceSection,
   ServiceHeading,
 } from "./services.styles";

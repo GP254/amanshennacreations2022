@@ -1,11 +1,4 @@
-import {
-  HomeImageSmall,
-  HomeImageLarge,
-  HomeHeading,
-  HomeContainer,
-  BookNowButton,
-  BookingContainer,
-} from "./home.styles";
+import { HomeContainer } from "./home.styles";
 import { Carousel } from "react-bootstrap";
 
 const Home = () => (

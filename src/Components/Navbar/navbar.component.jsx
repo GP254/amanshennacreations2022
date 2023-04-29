@@ -2,7 +2,6 @@ import {
   StyledNavbar,
   StyledLinks,
   StyledOptions,
-  StyledTitle,
   StyledItemWrapper,
   StyledLogo,
 } from "./navbar.styles";
