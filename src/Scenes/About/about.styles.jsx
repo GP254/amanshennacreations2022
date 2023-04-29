@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
+  background-color: #c2a88e;
+  color: white;
   display: flex;
   justify-content: center;
   overflow: auto;

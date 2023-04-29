@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledNavbar = styled.div`
-  background-image: linear-gradient(rgb(147, 93, 39, 0.5), black);
+  background-image: linear-gradient(#c2a88e, black);
   padding: 10px 0;
   overflow: auto;
   position: sticky;
