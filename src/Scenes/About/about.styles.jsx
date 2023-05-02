@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-  background-color: #c2a88e;
-  color: white;
+  color: black;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   overflow: auto;
+  padding: 50px 0;
+  width: 100%;
   animation: fadeIn ease 3s;
   -webkit-animation: fadeIn ease 3s;
   @keyframes fadeIn {
@@ -20,6 +21,8 @@ export const AboutContainer = styled.div`
 `;
 
 export const AboutImg = styled.img`
-  height: 400px;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
   align-self: center;
 `;

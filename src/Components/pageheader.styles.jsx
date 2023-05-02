@@ -5,4 +5,5 @@ export const StyledHeaderBox = styled.div`
   font-family: "Savoye LET";
   line-height: 1.2em;
   height: 55px;
+  margin-top: 50px;
 `;

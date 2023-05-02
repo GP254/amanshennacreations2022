@@ -4,7 +4,6 @@ export const StyledContactsForm = styled.form`
   @media screen and (min-width: 1001px) {
     width: 100%;
   }
-  padding: 10px;
   background: #ffffff;
 `;
 

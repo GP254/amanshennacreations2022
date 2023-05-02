@@ -15,8 +15,8 @@ export const StyledContacts = styled.div`
       opacity: 1;
     }
   }
-  padding: 10vh;
   flex-wrap: wrap;
+  padding: 50px;
   -webkit-animation: fadeIn ease 3s;
 `;
 

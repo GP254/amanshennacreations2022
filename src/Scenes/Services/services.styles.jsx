@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const ServicesContent = styled.div`
   align-items: center;
   display: flex;
-  margin: 40px 0;
+  margin: 50px;
+  justify-content: space-evenly;
   animation: fadeIn ease 3s;
   -webkit-animation: fadeIn ease 3s;
   @keyframes fadeIn {
@@ -14,7 +15,6 @@ export const ServicesContent = styled.div`
       opacity: 1;
     }
   }
-  overflow-x: hidden;
 `;
 
 export const ServicesContainer = styled.div`

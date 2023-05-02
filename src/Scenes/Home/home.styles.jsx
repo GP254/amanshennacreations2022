@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.div`
+  justify-content: right;
   display: flex;
   background-image: url("home_img.JPG");
   background-size: 100%;
@@ -21,41 +22,12 @@ export const HomeContainer = styled.div`
   }
 `;
 
-export const BookingContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-export const BookNowButton = styled.button`
-  width: 200px;
-  height: 100px;
-  font-size: 25px;
-  background-color: #efe7df;
-  color: rgba(147, 93, 39);
-  box-shadow: lightgrey 5px 5px;
-  border: 0px;
-  &:active {
-    box-shadow: lightgrey 0px 0px;
-  }
-`;
-
-export const HomeImageSmall = styled.img`
-  height: 440px;
-  width: 440px;
-  box-shadow: #efe7df -60px 60px;
-  margin-left: 60px;
-  margin-bottom: 60px;
-`;
-
-export const HomeImageLarge = styled.img`
-  width: 500px;
-  height: 500px;
-`;
-
 export const HomeHeading = styled.div`
   padding: 12px;
+  margin-right: 200px;
+  display: flex;
+  color: white;
   text-align: center;
-  font-size: 40px;
+  font-size: 45px;
   font-family: "Savoye LET";
 `;

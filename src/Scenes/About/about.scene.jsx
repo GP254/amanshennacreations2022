@@ -9,7 +9,7 @@ const About = () => (
       <AboutImg src="about.png" alt={""} />
       <CurlyText
         text={
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aliquid et, fugit illum ipsam praesentium. Accusantium amet eaque explicabo iusto nulla numquam odio ratione repudiandae, sapiente sit ut, vitae!"
+          "Amandeep Sihra is the talented founder and visionary henna artist behind Amans Henna Creations. Based in Brampton, Ontario, Amandeep has been providing exceptional henna services to clients throughout the GTA and beyond. With a passion for henna artistry and an unwavering commitment to excellence, Amandeep has become a highly sought-after henna artist in the industry. With their unparalleled creativity and attention to detail, Amandeep can transform your vision into a stunning work of art that you'll cherish for years to come. Trust Amandeep to provide the highest quality henna services and create an unforgettable experience for your special occasion"
         }
         curly={true}
       />
