@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const GalleryContainer = styled.div`
   height: 100vh;
-  padding: 50px 0;
+  padding: 50px 50px;
   overflow: auto;
   animation: fadeIn ease 3s;
   -webkit-animation: fadeIn ease 3s;
@@ -15,5 +15,3 @@ export const GalleryContainer = styled.div`
     }
   }
 `;
-
-export const StyledImages = styled.img``;

@@ -4,7 +4,9 @@ import Fade from "react-reveal/Fade";
 const Home = () => (
   <HomeContainer>
     <HomeHeading>
-      <Fade left>Welcome to Amans Henna Creations</Fade>
+      <Fade left cascade duration={2000}>
+        Welcome to Amans Henna Creations
+      </Fade>
     </HomeHeading>
   </HomeContainer>
 );

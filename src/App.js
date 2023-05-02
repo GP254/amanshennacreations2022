@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Fade>
+      <Fade duration={2000}>
         <Home />
         <Services />
         <About />

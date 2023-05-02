@@ -15,14 +15,18 @@ const Services = () => {
     <div id="services">
       <PageHeader text={"Services"} />
       <ServicesContent>
-        <ServiceMainImg src="services_main.jpeg" alt={""} />
-        <CurlyText
-          text="At Amans Henna Creations, we offer a diverse range of henna services tailored to meet your needs for various events such as weddings, parties, baby showers, crowns, and customs. Whether you're located in the GTA or beyond, we're here to make your special occasion unforgettable with our stunning henna designs."
-          curly
-        />
+        <Fade left duration={2000}>
+          <ServiceMainImg src="services_main.jpeg" alt={""} />
+        </Fade>
+        <Fade right duration={2000}>
+          <CurlyText
+            text="At Amans Henna Creations, we offer a diverse range of henna services tailored to meet your needs for various events such as weddings, parties, baby showers, crowns, and customs. Whether you're located in the GTA or beyond, we're here to make your special occasion unforgettable with our stunning henna designs."
+            curly
+          />
+        </Fade>
       </ServicesContent>
       <ServicesContainer>
-        <Fade>
+        <Fade duration={2000}>
           <ServiceSection>
             <ServiceHeading>Party Henna</ServiceHeading>
             <ServiceImg src={"party.jpeg"} />

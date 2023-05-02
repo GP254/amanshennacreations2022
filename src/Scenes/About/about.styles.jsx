@@ -4,6 +4,7 @@ export const AboutContainer = styled.div`
   color: black;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   overflow: auto;
   padding: 50px 0;
   width: 100%;
