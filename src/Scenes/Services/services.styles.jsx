@@ -5,16 +5,6 @@ export const ServicesContent = styled.div`
   display: flex;
   margin: 50px;
   justify-content: space-evenly;
-  animation: fadeIn ease 3s;
-  -webkit-animation: fadeIn ease 3s;
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 `;
 
 export const ServicesContainer = styled.div`
